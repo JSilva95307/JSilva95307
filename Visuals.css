@@ -1,0 +1,25 @@
+.customization
+{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+body
+{
+    background-color: #363636;
+}
+.header-block {
+    padding: 24px 16px;
+    background-color: black;
+    top: 0;
+}
+.footer-block {
+    padding: 24px 16px;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+}
+.main
+{
+    padding: 100vh;
+}
