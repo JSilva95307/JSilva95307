@@ -7,24 +7,127 @@
     <link rel="stylesheet" href="Visuals.css">
 </head>
 <body>
-    <div class="header-block">
-        <div class="header-text">Welcome to my portfolio </div>
-        <div>
-            <div>
-                <a href="./resumepage.html" target="_parent">
-                    Resume
-                </a>
-            </div>
-            <div>
-                <a href="./index.html" target="_parent">
-                    home
-                </a>
-            </div>
-            <div>Planetarium</div>
+    <div class="header-sub-block">
+        <div class="header-sub-text">
+            <a href="./resumepage.html">
+                Resume
+            </a>
+        </div>
+        <div class="header-sub-text">
+            <a href="./index.html" target="_parent">
+                Home
+            </a>
+        </div>
+        <div class="header-sub-text">
+            Planetarium
         </div>
     </div>
     <div class="main">
-        <div class="header-text"> under construction, check back later!</div>
+        <br />
+        <div class="header-text"> Planetarium:</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Melee System
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> The melee combat system of planetarium was the biggest system I designed and implemented into our game.
+                    As I mentioned on the home page, I made a feature rich melee collision system that was usable by both the player's weapons
+                    and the enemies themselves. To go into more detail, the system was implemented to be optimized with the many 
+                    collisions in the game. The way this is accomplished is by making all of the necessary colliders, and then
+                    simply changing their position and how long they're allowed to collide with something. I also made sure to 
+                    include variety with the types of collisions, the basic Unreal engine ones being sphere, cube and capsule colliders; and 
+                    also adding a mesh based collider that would allow for more complex shapes like a cone. Collision effects can be simple 
+                    damage effects, or you can hit actors multiple times and even launch them.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/meleesystem.gif" width="450" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Hammer
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text">The hammer was the first weapon that I had designed for our game with the melee system in mind. This weapon has 
+                    a little bit of everything that my implemented system has to offer. This weapon uses the many different collision shapes available
+                    to use while also using things like the multi-hitting functionality and launching ability. Implementing the hammer was an interesting
+                    challenge as a different programmer designed and implemented a foundational system to the game for the player to be able to swap 
+                    between chosen weapons freely. My work mainly came from designing the actual abilities and implementing them to a class I had to
+                    create that used the parent weapons class. Attaching additional functionality to the hammer's attacks to make sure they came out
+                    at the right time and even pushing to make the melee class even more flexible were all problems I had to solve with the implementation
+                    of the weapon.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/hammer.gif" width="450" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Shield
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> The shield was the first utility item in our game that I designed and implemented that used the melee collision
+                    system for something other than attacking. Implementing the Sword and Hammer was a straight forward process with most of the 
+                    functionality being designed around simply donig damage. However, the shield only had a single launching attack and the rest of its abilities 
+                    were defense focused. Detecting which direction you had been struck from and determining if something should happen as a result was a difficult
+                    task as it was a new problem to solve. Realizing I had access to the necessary variables from collision information 
+                    however, I quickly implemented a solution that used vector math to determin the direction in which the attack was coming from and 
+                    if the damage it dealt should be reduced as a result. 
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/shield.gif" width="450" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Shotgun
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> The shotgun I designed was implemented in a rather unorthodox. Designing the shotgun to be a short ranged weapon 
+                    with a ton of damage potential made sense, but making the necessary functionality to make the gun feel like it needed great accuracy 
+                    was not desireable. I implemented the shotgun's abilities through the use of
+                    my melee collision system. All but one ability of the shotgun is made with different melee colliders, mostly using the mesh collider
+                    to be able to attack enemies in a cone like you would expect from a regular shotgun. The other difficulty was using the projectile 
+                    system that the other Gameplay Programmer had implemented as it was a different system than mine and trying to mix them in one 
+                    weapon was a challenge. Solving this problem came down to simply changing how the logic worked for that one specific ability when 
+                    it was active.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/shotgun.gif" width="450" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
     <div class="footer-block">
         <div class="footer-text">
