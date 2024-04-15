@@ -7,26 +7,136 @@
     <link rel="stylesheet" href="Visuals.css">
 </head>
 <body>
-        <div class="header-sub-block">
-            <div class="header-sub-text">
-                <a href="./resumepage.html" target="_parent">
-                    Resume
-                </a>
-            </div>
-            <div class="header-sub-text">
-                <a href="./index.html" target="_parent">
+    <div class="header-sub-block">
+        <div class="header-sub-text">
+            <a href="./resumepage.html" target="_parent">
+                Resume
+            </a>
+        </div>
+        <div class="header-sub-text">
+            <a href="./index.html" target="_parent">
 
-                    Home
-                </a>
-            </div>
-            <div class="header-sub-text">
-                <a href="./planetariumpage.html" target="_parent">
-                    Planetarium
-                </a>
-            </div>
+                Home
+            </a>
         </div>
+        <div class="header-sub-text">
+            <a href="./planetariumpage.html" target="_parent">
+                Planetarium
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <br />
+        <div class="header-text"> Cryptid Conquest:</div>
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="title-text">
-            Page Under Construction, Please Check Back Later.
+            Menu System
         </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> Cryptid Conquest's menu system is mostly used when you first open the game to navigate the several menus
+                    including the main menu, settings, keybinds and credits menu. I implemented the functionality of transitions, some simple sound effects,
+                    and visual feedback for whenever you click on a button to make the experience more satisfying as well. The menu system had difficult
+                    to implement dynamic aspects to it, especially in game with the player hud and all of its components. 
+                    I was able to implement a lot into the player's hud, from a timer, to an item display that keeps track
+                    of how many of each item you have to a status effect bar that shows you what you're being affected by.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/menus.gif" width="650" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Settings Menu
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> I designed and implemented the settings menu to have a few different functional options. The first feature I 
+                    implemented was a mouse sensitivity bar that would do what you expect and affect how fast you can turn in game and look around with 
+                    your given sensitivity. Next, I made two more sliders, this time related to volume of music and sound effects respectively. The way 
+                    I implemented this was through the Unity Engine Audio Manager where I was able to group desired sound effects into two audio mixers 
+                    and directly affect how loud all of the grouped up Audio Sources were. Lastly, the final two settings were checkboxes that
+                    let you to have inverted camera controls and toggle sprinting. 
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/settings.gif" width="650" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Weapon Select Menu
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> The Weapon Select menu was a bit tough to implement as I wanted to make sure that it had enough player
+                    feedback while also showing you important information and not being too cluttered visually. The Way I did this was by
+                    using different buttons to let you select and set the player's loadout from the listed choices. When you would 
+                    click on a new weapon or utility item, it would update the display, a short little description on the side of the menu to tell
+                    you what the selected equipment would do in game. From this menu, we're able to either go straight into the game or go back 
+                    to navigate previous menus.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/weaponselect.gif" width="650" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="title-text">
+            Player Hud
+        </div>
+        <br />
+        <br />
+        <div class="row-block">
+            <div class="paragraph-body">
+                <p class="body-text"> The player hud was the most difficult part of the entire project as I had decided to design and then
+                    implement a menu that had a lot of moving and dynamic aspects to it. To name the main features, there was a bar that displayed
+                    icons for active debuffs and buffs, your items, your health, a cooldown area with live cooldown timers, a run timer, and a small 
+                    square that displayed currency and enemy count. The timers were implemented using the Timer class in Unity and the UI elements 
+                    were implemented through the use of varius custom structs and lists. I even implemented an item notification that shows up telling you
+                    what your item that you picked up does that dissapears after a short few seconds.
+                </p>
+            </div>
+            <div>
+                <img src="./ProjectImages/itempickup.gif" width="650" height="450" class="flex-image">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="footer-block">
+        <div class="footer-text">
+            <a href="https://www.linkedin.com/in/jesus-silva-515236259/" target="_parent">
+                linkedin
+            </a>
+        </div>
+        <br />
+        <div class="footer-text">
+            <a href="https://github.com/JSilva95307" target="_blank">
+                github
+            </a>
+        </div>
+    </div>
 </body>
 </html>

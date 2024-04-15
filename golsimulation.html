@@ -25,8 +25,96 @@
                 </a>
             </div>
         </div>
-        <div class="title-text">
-            Page Under Construction, Please Check Back Later.
+        <div class="main">
+            <br />
+            <div class="header-text"> Conway's Game Of Life:</div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="title-text">
+                The Simulation
+            </div>
+            <br />
+            <br />
+            <div class="row-block">
+                <div class="paragraph-body">
+                    <p class="body-text"> For the simulation of Conway's game of life, I implemented the stated rules: if any life cell with fewer than 2 live neighbors
+                        dies, any live cells with two or three live neighbors lives, any live cell with more than three neighbors dies, any dead
+                        cell with exactly 3 cells as neighbors becomes alive. To implement this simulation, I needed a GUI of some sort, and I ended up using WXWidgets. 
+                        Utilizing the WXWidgets GUI and its build in features, I made the window resizable and with the necessary buttons needed to interact with the 
+                        game of life, as well as a few extra drop down menus for extra functionality.
+                    </p>
+                </div>
+                <div>
+                    <img src="./ProjectImages/golsim.png" width="450" height="450" class="flex-image">
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="title-text">
+                Settings
+            </div>
+            <br />
+            <br />
+            <div class="row-block">
+                <div class="paragraph-body">
+                    <p class="body-text"> For the game of life, since the basic setup of having a simulation in a window was simple, the
+                        project also called for some customizability of the window and the simulation. Settings I implemented
+                        were the ability to change the color of the living and dead cells, a custom map size, how fast the game would run and 
+                        if the edges of the map should wrap. The colors were implemented through a color picking widget that WXWidgets 
+                        had, saving the selected RGB code and then applying it to the respective kind of cell, living or dead. The wrap around 
+                        was done using some basic math and if checks. Lastly, I made a random map generator that uses the rand function with 
+                        either a default seed or a player input seed to randomize the map
+                    </p>
+                </div>
+                <div>
+                    <img src="./ProjectImages/golsettings.png" width="450" height="450" class="flex-image">
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="title-text">
+                Saving Maps
+            </div>
+            <br />
+            <br />
+            <div class="row-block">
+                <div class="paragraph-body">
+                    <p class="body-text"> The other big feature set that I had implemented into the simulation is the ability to save desired maps into custom
+                        files that could be used later. This required the use of fstream for file IO, but this made it possible to save and also load maps for
+                        this program. With the simulation map being customizable, I ran into the issue of what would happen if you tried to load a map that's
+                        not the same size as the one that's currently active. I implemented a quick and effecient fix that would simply resize the map automatically
+                        to a larger map if the active one was too small. If the active map is larger than the saved map, then it will only turn on the necessary
+                        saved live squares up to the size of the map that was saved, leaving any of the excess map automatically all dead. 
+                    </p>
+                </div>
+                <div>
+                    <img src="./ProjectImages/golsaving.png" width="450" height="450" class="flex-image">
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
+        <div class="footer-block">
+            <div class="footer-text">
+                <a href="https://www.linkedin.com/in/jesus-silva-515236259/" target="_parent">
+                    linkedin
+                </a>
+            </div>
+            <br />
+            <div class="footer-text">
+                <a href="https://github.com/JSilva95307" target="_blank">
+                    github
+                </a>
+            </div>
+        </div>
+       
 </body>
 </html>
